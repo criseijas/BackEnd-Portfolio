@@ -12,15 +12,15 @@ public class PersonaDto {
     private String nombre;
     @NotBlank
     private String apellido;
-    private String img;
+    
 
     public PersonaDto() {
     }
 
-    public PersonaDto(String nombre, String apellido, String img) {
+    public PersonaDto(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.img = img;
+        
     }
 
 }

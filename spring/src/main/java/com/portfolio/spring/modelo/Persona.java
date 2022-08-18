@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 public class Persona {
-        
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,15 +20,20 @@ public class Persona {
     private String nombre;
     @NotNull
     private String apellido;
-    private String img;
+    @NotNull
+    private String titulo;
+    @NotNull
+    private String descripcion;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String img) {
+    public Persona(String nombre, String apellido, String titulo, String descripcion) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.img = img;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+
     }
 
     public Long getId() {
@@ -55,12 +60,20 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    public String getImg() {
-        return img;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
 }
