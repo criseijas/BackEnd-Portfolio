@@ -85,7 +85,7 @@ public class EducacionController {
                 .get().getId() != id) {
             return new ResponseEntity(new Mensaje("Ese título ya existe"), HttpStatus.BAD_REQUEST);
         }
-        //agregar los if que faltan de institucion lugar y año
+        
         if (StringUtils.isBlank(dtoEducacion.getTituloEdu())) {
             return new ResponseEntity(new Mensaje("El campo no puede estar vacío"), HttpStatus.BAD_REQUEST);
         }

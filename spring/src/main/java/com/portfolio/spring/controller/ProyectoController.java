@@ -1,10 +1,9 @@
 
 package com.portfolio.spring.controller;
 
-import com.portfolio.spring.dto.ExperienciaDto;
+
 import com.portfolio.spring.dto.Mensaje;
 import com.portfolio.spring.dto.ProyectoDto;
-import com.portfolio.spring.modelo.Experiencia;
 import com.portfolio.spring.modelo.Proyecto;
 import com.portfolio.spring.service.ProyectoService;
 import java.util.List;
